@@ -1,0 +1,16 @@
+{
+  "query": "SELECT organization, sportName, registrationCloseDate, registrationUrl FROM sports_programs WHERE organization = 'Point Edward Minor Athletic Association (PEMAA)' AND sportName = 'Ice Hockey';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT organization, sportName, registrationCloseDate, registrationUrl FROM sports_programs WHERE organization = 'Point Edward Minor Athletic Association (PEMAA)' AND sportName = 'Ice Hockey';",
+  "rows": [
+    {
+      "organization": "Point Edward Minor Athletic Association (PEMAA)",
+      "sportName": "Ice Hockey",
+      "registrationCloseDate": "2026-06-30 00:00:00",
+      "registrationUrl": "https://page.spordle.com/point-edward/register/1f1438a7-4127-61f6-9f68-0233802c013f"
+    }
+  ],
+  "messages": [],
+  "stdout": "organization\tsportName\tregistrationCloseDate\tregistrationUrl\nPoint Edward Minor Athletic Association (PEMAA)\tIce Hockey\t2026-06-30 00:00:00\thttps://page.spordle.com/point-edward/register/1f1438a7-4127-61f6-9f68-0233802c013f\n",
+  "stderr": "",
+  "execution_time_ms": 258
+}

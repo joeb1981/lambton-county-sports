@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO ad_slots (title, imageUrl, imageKey, destinationUrl, position, sortOrder, isActive) VALUES ('Tangs China House', '/manus-storage/TangsLogo_ed6b4803.png', 'TangsLogo_ed6b4803.png', 'https://tangschinahouse.com/', 'inline_card', 1, true);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute INSERT INTO ad_slots (title, imageUrl, imageKey, destinationUrl, position, sortOrder, isActive) VALUES ('Tangs China House', '/manus-storage/TangsLogo_ed6b4803.png', 'TangsLogo_ed6b4803.png', 'https://tangschinahouse.com/', 'inline_card', 1, true);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 268
+}

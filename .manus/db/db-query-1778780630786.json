@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total FROM sports_programs;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT COUNT(*) as total FROM sports_programs;",
+  "rows": [
+    {
+      "total": "61"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\n61\n",
+  "stderr": "",
+  "execution_time_ms": 277
+}

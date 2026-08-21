@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, sportName, organization FROM sports_programs WHERE organization LIKE '%Sarnia Junior Football%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT id, sportName, organization FROM sports_programs WHERE organization LIKE '%Sarnia Junior Football%';",
+  "rows": [
+    {
+      "id": "17",
+      "sportName": "Football",
+      "organization": "Sarnia Junior Football Association (SJFA)"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsportName\torganization\n17\tFootball\tSarnia Junior Football Association (SJFA)\n",
+  "stderr": "",
+  "execution_time_ms": 261
+}

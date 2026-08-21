@@ -1,0 +1,24 @@
+{
+  "query": "SELECT id, title, imageUrl, destinationUrl, position FROM ad_slots ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT id, title, imageUrl, destinationUrl, position FROM ad_slots ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "title": "Ironworks Health & Wellness",
+      "imageUrl": "/manus-storage/ads/1-1780327381080-ironworks logo_26bb595f.webp",
+      "destinationUrl": "https://ironworksfitness.ca/",
+      "position": "banner_top"
+    },
+    {
+      "id": "2",
+      "title": "Tangs China House",
+      "imageUrl": "/manus-storage/SPONSOREDBY_4c995b75.png",
+      "destinationUrl": "https://tangschinahouse.com/",
+      "position": "inline_card"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\timageUrl\tdestinationUrl\tposition\n1\tIronworks Health & Wellness\t/manus-storage/ads/1-1780327381080-ironworks logo_26bb595f.webp\thttps://ironworksfitness.ca/\tbanner_top\n2\tTangs China House\t/manus-storage/SPONSOREDBY_4c995b75.png\thttps://tangschinahouse.com/\tinline_card\n",
+  "stderr": "",
+  "execution_time_ms": 262
+}

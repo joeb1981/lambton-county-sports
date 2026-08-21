@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, sportName, organization FROM sports_programs ORDER BY sportName, organization LIMIT 20 OFFSET 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT id, sportName, organization FROM sports_programs ORDER BY sportName, organization LIMIT 20 OFFSET 20;",
+  "rows": [
+    {
+      "id": "7",
+      "sportName": "Ice Hockey (AAA)",
+      "organization": "Lambton Jr. Sting"
+    },
+    {
+      "id": "6",
+      "sportName": "Ice Hockey (Girls / AAA)",
+      "organization": "Lambton Attack Girls Hockey"
+    },
+    {
+      "id": "10",
+      "sportName": "Lacrosse",
+      "organization": "Sarnia Minor Lacrosse Association"
+    },
+    {
+      "id": "24",
+      "sportName": "Ringette",
+      "organization": "Forest Xtreme Ringette"
+    },
+    {
+      "id": "27",
+      "sportName": "Sailing",
+      "organization": "Sarnia Yacht Club"
+    },
+    {
+      "id": "30002",
+      "sportName": "Soccer",
+      "organization": "Point Edward Minor Athletic Association (PEMAA)"
+    },
+    {
+      "id": "8",
+      "sportName": "Soccer",
+      "organization": "Sarnia FC (Football Club)"
+    },
+    {
+      "id": "9",
+      "sportName": "Soccer (Girls)",
+      "organization": "Sarnia Girls Soccer Club"
+    },
+    {
+      "id": "23",
+      "sportName": "Swimming",
+      "organization": "YMCA Sarnia-Lambton (Jerry McCaw Family Centre)"
+    },
+    {
+      "id": "21",
+      "sportName": "Tennis",
+      "organization": "Sarnia Tennis Club"
+    },
+    {
+      "id": "25",
+      "sportName": "Volleyball",
+      "organization": "Twin Bridges Volleyball Club"
+    },
+    {
+      "id": "28",
+      "sportName": "Wrestling",
+      "organization": "Sarnia Bluewater Wrestling Club"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsportName\torganization\n7\tIce Hockey (AAA)\tLambton Jr. Sting\n6\tIce Hockey (Girls / AAA)\tLambton Attack Girls Hockey\n10\tLacrosse\tSarnia Minor Lacrosse Association\n24\tRingette\tForest Xtreme Ringette\n27\tSailing\tSarnia Yacht Club\n30002\tSoccer\tPoint Edward Minor Athletic Association (PEMAA)\n8\tSoccer\tSarnia FC (Football Club)\n9\tSoccer (Girls)\tSarnia Girls Soccer Club\n23\tSwimming\tYMCA Sarnia-Lambton (Jerry McCaw Family Centre)\n21\tTennis\tSarnia Tennis Club\n25\tVolleyball\tTwin Bridges Volleyball Club\n28\tWrestling\tSarnia Bluewater Wrestling Club\n",
+  "stderr": "",
+  "execution_time_ms": 265
+}

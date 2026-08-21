@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `sports_programs` ADD `townArea` varchar(128);\nALTER TABLE `sports_programs` ADD `ageMin` int;\nALTER TABLE `sports_programs` ADD `ageMax` int;\nALTER TABLE `sports_programs` ADD `programEndDate` timestamp;\nALTER TABLE `sports_programs` ADD `websiteUrl` text;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute ALTER TABLE `sports_programs` ADD `townArea` varchar(128);\nALTER TABLE `sports_programs` ADD `ageMin` int;\nALTER TABLE `sports_programs` ADD `ageMax` int;\nALTER TABLE `sports_programs` ADD `programEndDate` timestamp;\nALTER TABLE `sports_programs` ADD `websiteUrl` text;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1308
+}

@@ -1,0 +1,8 @@
+{
+  "query": "UPDATE programs SET registrationCloseDate = '2026-06-30', registrationUrl = 'https://page.spordle.com/point-edward/register/1f1438a7-4127-61f6-9f68-0233802c013f' WHERE organization = 'Point Edward Minor Athletic Association' AND sportName = 'Ice Hockey';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute UPDATE programs SET registrationCloseDate = '2026-06-30', registrationUrl = 'https://page.spordle.com/point-edward/register/1f1438a7-4127-61f6-9f68-0233802c013f' WHERE organization = 'Point Edward Minor Athletic Association' AND sportName = 'Ice Hockey';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table '9dzmjn9up6rdugfkhdfh7u.programs' doesn't exist"
+  ]
+}

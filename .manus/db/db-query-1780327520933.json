@@ -1,0 +1,9 @@
+{
+  "query": "SELECT organization, sportName, registrationCloseDate, registrationUrl FROM sports_programs WHERE organization = 'Point Edward Minor Athletic Association' AND sportName = 'Ice Hockey';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT organization, sportName, registrationCloseDate, registrationUrl FROM sports_programs WHERE organization = 'Point Edward Minor Athletic Association' AND sportName = 'Ice Hockey';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 261
+}

@@ -1,0 +1,15 @@
+{
+  "query": "SHOW TABLES; DESCRIBE programs;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SHOW TABLES; DESCRIBE programs;",
+  "returncode": 1,
+  "logs": [
+    "Tables_in_9DzmjN9Up6RDUgfkhdfH7U",
+    "__drizzle_migrations",
+    "ad_slots",
+    "cron_config",
+    "program_changes",
+    "sports_programs",
+    "users",
+    "ERROR 1146 (42S02) at line 1: Table '9dzmjn9up6rdugfkhdfh7u.programs' doesn't exist"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "query": "SELECT id, sportName, organization FROM sports_programs ORDER BY sportName, organization;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute SELECT id, sportName, organization FROM sports_programs ORDER BY sportName, organization;",
+  "rows": [
+    {
+      "id": "19",
+      "sportName": "Ball Hockey",
+      "organization": "Sarnia Minor Ball Hockey League (SMBHL)"
+    },
+    {
+      "id": "14",
+      "sportName": "Baseball",
+      "organization": "Corunna Minor Baseball"
+    },
+    {
+      "id": "13",
+      "sportName": "Baseball",
+      "organization": "Lambton Shores Minor Baseball"
+    },
+    {
+      "id": "12",
+      "sportName": "Baseball",
+      "organization": "Sarnia Brigade Minor Baseball"
+    },
+    {
+      "id": "11",
+      "sportName": "Baseball",
+      "organization": "SMAA Hawks Baseball (Sarnia Minor Athletic Association)"
+    },
+    {
+      "id": "18",
+      "sportName": "Basketball",
+      "organization": "Hoops Allstar Basketball"
+    },
+    {
+      "id": "30",
+      "sportName": "Challenger Ball (Adaptive Baseball)",
+      "organization": "SMAA Challenger Ball"
+    },
+    {
+      "id": "26",
+      "sportName": "Curling",
+      "organization": "Sarnia Golf and Curling Club (Little Rockers Junior Curling)"
+    },
+    {
+      "id": "29",
+      "sportName": "Fastball (Girls)",
+      "organization": "Sarnia Heat Girls Fastball (SMAA)"
+    },
+    {
+      "id": "20",
+      "sportName": "Flag Football",
+      "organization": "Bluewater Flag Football"
+    },
+    {
+      "id": "17",
+      "sportName": "Football",
+      "organization": "Sarnia Junior Football Association (SJFA)"
+    },
+    {
+      "id": "16",
+      "sportName": "Football",
+      "organization": "SMAA Football (Sarnia Minor Athletic Association)"
+    },
+    {
+      "id": "22",
+      "sportName": "Golf",
+      "organization": "SMAA Junior Golf Tour (Lambton Junior Golf Tour)"
+    },
+    {
+      "id": "15",
+      "sportName": "Gymnastics",
+      "organization": "Bluewater Gymnastics Club"
+    },
+    {
+      "id": "4",
+      "sportName": "Ice Hockey",
+      "organization": "East Lambton Minor Hockey Association"
+    },
+    {
+      "id": "3",
+      "sportName": "Ice Hockey",
+      "organization": "Lambton Shores Minor Hockey Association"
+    },
+    {
+      "id": "2",
+      "sportName": "Ice Hockey",
+      "organization": "Mooretown Minor Hockey Association"
+    },
+    {
+      "id": "5",
+      "sportName": "Ice Hockey",
+      "organization": "Petrolia Minor Hockey Association"
+    },
+    {
+      "id": "30001",
+      "sportName": "Ice Hockey",
+      "organization": "Point Edward Minor Athletic Association (PEMAA)"
+    },
+    {
+      "id": "1",
+      "sportName": "Ice Hockey",
+      "organization": "Sarnia Hockey Association"
+    },
+    {
+      "id": "7",
+      "sportName": "Ice Hockey (AAA)",
+      "organization": "Lambton Jr. Sting"
+    },
+    {
+      "id": "6",
+      "sportName": "Ice Hockey (Girls / AAA)",
+      "organization": "Lambton Attack Girls Hockey"
+    },
+    {
+      "id": "10",
+      "sportName": "Lacrosse",
+      "organization": "Sarnia Minor Lacrosse Association"
+    },
+    {
+      "id": "24",
+      "sportName": "Ringette",
+      "organization": "Forest Xtreme Ringette"
+    },
+    {
+      "id": "27",
+      "sportName": "Sailing",
+      "organization": "Sarnia Yacht Club"
+    },
+    {
+      "id": "30002",
+      "sportName": "Soccer",
+      "organization": "Point Edward Minor Athletic Association (PEMAA)"
+    },
+    {
+      "id": "8",
+      "sportName": "Soccer",
+      "organization": "Sarnia FC (Football Club)"
+    },
+    {
+      "id": "9",
+      "sportName": "Soccer (Girls)",
+      "organization": "Sarnia Girls Soccer Club"
+    },
+    {
+      "id": "23",
+      "sportName": "Swimming",
+      "organization": "YMCA Sarnia-Lambton (Jerry McCaw Family Centre)"
+    },
+    {
+      "id": "21",
+      "sportName": "Tennis",
+      "organization": "Sarnia Tennis Club"
+    },
+    {
+      "id": "25",
+      "sportName": "Volleyball",
+      "organization": "Twin Bridges Volleyball Club"
+    },
+    {
+      "id": "28",
+      "sportName": "Wrestling",
+      "organization": "Sarnia Bluewater Wrestling Club"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsportName\torganization\n19\tBall Hockey\tSarnia Minor Ball Hockey League (SMBHL)\n14\tBaseball\tCorunna Minor Baseball\n13\tBaseball\tLambton Shores Minor Baseball\n12\tBaseball\tSarnia Brigade Minor Baseball\n11\tBaseball\tSMAA Hawks Baseball (Sarnia Minor Athletic Association)\n18\tBasketball\tHoops Allstar Basketball\n30\tChallenger Ball (Adaptive Baseball)\tSMAA Challenger Ball\n26\tCurling\tSarnia Golf and Curling Club (Little Rockers Junior Curling)\n29\tFastball (Girls)\tSarnia Heat Girls Fastball (SMAA)\n20\tFlag Football\tBluewater Flag Football\n17\tFootball\tSarnia Junior Football Association (SJFA)\n16\tFootball\tSMAA Football (Sarnia Minor Athletic Association)\n22\tGolf\tSMAA Junior Golf Tour (Lambton Junior Golf Tour)\n15\tGymnastics\tBluewater Gymnastics Club\n4\tIce Hockey\tEast Lambton Minor Hockey Association\n3\tIce Hockey\tLambton Shores Minor Hockey Association\n2\tIce Hockey\tMooretown Minor Hockey Association\n5\tIce Hockey\tPetrolia Minor Hockey Association\n30001\tIce Hockey\tPoint Edward Minor Athletic Association (PEMAA)\n1\tIce Hockey\tSarnia Hockey Association\n7\tIce Hockey (AAA)\tLambton Jr. Sting\n6\tIce Hockey (Girls / AAA)\tLambton Attack Girls Hockey\n10\tLacrosse\tSarnia Minor Lacrosse Association\n24\tRingette\tForest Xtreme Ringette\n27\tSailing\tSarnia Yacht Club\n30002\tSoccer\tPoint Edward Minor Athletic Association (PEMAA)\n8\tSoccer\tSarnia FC (Football Club)\n9\tSoccer (Girls)\tSarnia Girls Soccer Club\n23\tSwimming\tYMCA Sarnia-Lambton (Jerry McCaw Family Centre)\n21\tTennis\tSarnia Tennis Club\n25\tVolleyball\tTwin Bridges Volleyball Club\n28\tWrestling\tSarnia Bluewater Wrestling Club\n",
+  "stderr": "",
+  "execution_time_ms": 270
+}

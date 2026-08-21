@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Lambton County Sports brand palette */
+  --radius: 0px;
+  --navy: #1B3A6B;
+  --royal-blue: #1E73BE;
+  --green: #4A8C2A;
+  --light-grey: #F4F5F6;
+  --white: #FFFFFF;
+  --text-dark: #1B3A6B;
+  --text-light: #666666;
+  --border-light: #E0E0E0;
+
+  /* Semantic colors */
+  --background: #FFFFFF;
+  --foreground: #1B3A6B;
+  --card: #FFFFFF;
+  --card-foreground: #1B3A6B;
+  --popover: #FFFFFF;
+  --popover-foreground: #1B3A6B;
+  --primary: #1E73BE;
+  --primary-foreground: #FFFFFF;
+  --secondary: #4A8C2A;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F4F5F6;
+  --muted-foreground: #666666;
+  --accent: #4A8C2A;
+  --accent-foreground: #FFFFFF;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #E0E0E0;
+  --input: #FFFFFF;
+  --ring: #1E73BE;
+  --chart-1: #1E73BE;
+  --chart-2: #4A8C2A;
+  --chart-3: #1B3A6B;
+  --chart-4: #666666;
+  --chart-5: #DC2626;
+  --sidebar: #1B3A6B;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #4A8C2A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #1E73BE;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2D5A9E;
+  --sidebar-ring: #4A8C2A;
+}
+
+.dark {
+  --background: #1B3A6B;
+  --foreground: #FFFFFF;
+  --card: #2D5A9E;
+  --card-foreground: #FFFFFF;
+  --popover: #2D5A9E;
+  --popover-foreground: #FFFFFF;
+  --muted: #4A7BA7;
+  --muted-foreground: #E0E0E0;
+  --border: #4A7BA7;
+  --input: #2D5A9E;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
+  h5 {
+    @apply text-lg font-bold;
+  }
+
+  h6 {
+    @apply text-base font-bold;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /* Status badges */
+  .badge-open {
+    @apply bg-[#4A8C2A] text-white px-3 py-1 text-sm font-semibold;
+  }
+
+  .badge-upcoming {
+    @apply bg-[#1E73BE] text-white px-3 py-1 text-sm font-semibold;
+  }
+
+  .badge-closed {
+    @apply bg-gray-400 text-white px-3 py-1 text-sm font-semibold;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-[#1B3A6B] text-white px-6 py-3 font-semibold hover:bg-[#1E73BE] transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-[#4A8C2A] text-white px-6 py-3 font-semibold hover:opacity-90 transition-opacity;
+  }
+
+  .btn-outline {
+    @apply border-2 border-[#1B3A6B] text-[#1B3A6B] px-6 py-3 font-semibold hover:bg-[#1B3A6B] hover:text-white transition-colors;
+  }
+
+  /* Cards */
+  .card-border-left {
+    @apply border-l-4 border-[#1E73BE];
+  }
+
+  .card-border-left-green {
+    @apply border-l-4 border-[#4A8C2A];
+  }
+
+  /* Container */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Filter bar */
+  .filter-bar {
+    @apply bg-[#F4F5F6] border border-[#E0E0E0] p-4 md:p-6;
+  }
+
+  /* Program card */
+  .program-card {
+    @apply bg-white border-l-4 border-[#1E73BE] p-6 hover:shadow-md transition-shadow;
+  }
+}
+
+/* Utility classes */
+.text-text-light {
+  color: #666666;
+}
+
+.border-border-light {
+  border-color: #e0e0e0;
+}
+
+/* Remove rounded corners from form elements */
+button,
+input,
+select,
+textarea {
+  @apply rounded-none;
+}

@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE ad_slots SET imageUrl = '/manus-storage/SPONSOREDBY_300x150_eb86124c.png', imageKey = 'SPONSOREDBY_300x150_eb86124c.png' WHERE id = 2;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4sRKCo477HsaRCQ.f8ae916a228b --database 9DzmjN9Up6RDUgfkhdfH7U --execute UPDATE ad_slots SET imageUrl = '/manus-storage/SPONSOREDBY_300x150_eb86124c.png', imageKey = 'SPONSOREDBY_300x150_eb86124c.png' WHERE id = 2;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 277
+}
